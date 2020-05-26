@@ -27,7 +27,7 @@ class plots:
     cmap_name = 'rgb_list'
     cm = LinearSegmentedColormap.from_list(cmap_name, colors, N=128)
 
-  def add_colour_map(s_in):
+  def add_colour_plot(s_in):
 
     s = {
         'x': None,
@@ -199,7 +199,7 @@ class plots:
 
 
 
-
+# Example
 
 
 
@@ -247,13 +247,13 @@ se = {
     }
 
 plots.clear()
-plots.add_colour_map(sa)
-plots.add_colour_map(sb)
-plots.add_colour_map(sc)
-plots.add_colour_map(sd)
-plots.add_colour_map(se)
+plots.add_colour_plot(sa)
+plots.add_colour_plot(sb)
+plots.add_colour_plot(sc)
+plots.add_colour_plot(sd)
+plots.add_colour_plot(se)
 plots.make()
 
 plots.clear('new')
-plots.add_colour_map(sa)
+plots.add_colour_plot(sa)
 plots.make()
